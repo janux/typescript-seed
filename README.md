@@ -4,6 +4,8 @@ Starting point to create projects based on typescript
 
 ## Steps to start easily
 
+Follow the instructions to start using the seed in the simplest way possible
+
 1. Get the seed/skeleton
 
 ```bash
