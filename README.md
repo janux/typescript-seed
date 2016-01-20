@@ -4,14 +4,14 @@ Starting point to create projects based on typescript
 
 ## Steps to start easily
 
-1. Get the seed/skeleton
+1.	Get the seed/skeleton
 
 ```bash
 git clone https://github.com/janux/typescript-seed.git
 cd typescript-seed
 ```
 
-2. Install dependencies and typescript definitions
+2.	Install dependencies and typescript definitions
 
 ```bash
 # Install by running:
@@ -20,7 +20,7 @@ npm install && tsd install
 npm install tsd -g
 ```
 
-3. Look seed structure (Directory structure)
+3.	Look seed structure (Directory structure)
 
 ```
 .
@@ -52,7 +52,7 @@ npm install tsd -g
 - `src` Typescript source files for your project
 - `dist` Used for the production build
 
-4. Compile typescript project
+4.	Compile typescript project
 
 ```bash
 gulp default
@@ -74,7 +74,7 @@ gulp test
 
 ## typescript compiler configuration
 
-The configuration options are under config:
+The configuration options are under `config`
 
 ```javascript
 cfg.tsConfig = {
