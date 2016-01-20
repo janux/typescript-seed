@@ -2,25 +2,89 @@
 
 Starting point to create projects based on typescript
 
-* Install by running:
+## Steps to start easily
 
+1. Get the seed/skeleton
 
-	$ npm install && tsd install
+```bash
+git clone https://github.com/janux/typescript-seed.git
+cd typescript-seed
+```
 
-	Note: if you don't have TypeScript Definition manager (TSD), please install by running:
-		
-		$ npm install tsd -g
+2. Install dependencies and typescript definitions
 
-* Compile typescript project:
+```bash
+# Install by running:
+npm install && tsd install
+# Note: if you don't have TypeScript Definition manager (TSD), please install by running:
+npm install tsd -g
+```
 
+3. Look seed structure (Directory structure)
 
-	$ gulp default
+```
+.
+├── LICENSE
+├── README.md
+├── config
+│	└── default.js
+├── gulp
+│   ├── clean.js
+│   ├── doc.js
+│   ├── scripts.js
+│	└── test.js
+├── src
+│   ├── classExample.ts
+│   └── collections.ts
+├── test
+│   ├── log4js.json
+│   └── testExample.spec.js
+├── dist
+├── typings
+│
+├── .gitignore
+├── gulpfile.js
+├── index.js
+├── package.json
+└── tsd.json
+```
 
+- `src` Typescript source files for your project
+- `dist` Used for the production build
 
-* Generate documentation in 'doc' directory:
+4. Compile typescript project
 
-	$ gulp doc
+```bash
+gulp default
+```
 
-* Compile and run tests (also compiles the project files in their own directories)
+## Additional options
 
-    $ gulp test
+- Generate documentation under `doc`
+
+```bash
+gulp doc
+```
+
+- run tests under `test`
+
+```bash
+gulp test
+```
+
+## typescript compiler configuration
+
+The configuration options are under config:
+
+```javascript
+cfg.tsConfig = {
+	sortOutput: true,
+	module: "commonjs",
+	removeComments: true,
+	target:'ES5'
+};
+```
+
+## License
+
+MIT
