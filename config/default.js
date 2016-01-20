@@ -5,13 +5,11 @@ var path = require('path');
 var cfg = {
 	dir: {
 		src:     'src',
-		build:   'build',
+		dist:    'dist',
 		test:    'test',
 		doc:	 'doc'
 	},
-	file: {
-		app: 'janux-security.js'
-	},
+	file: {},
 	fileset: {}
 }; 
 
