@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "jest": "27.2.4",
-    "log4js": "0.6.29",
     "ts-jest": "27.0.5"
   },
   "devDependencies": {
